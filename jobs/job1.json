@@ -1,0 +1,70 @@
+{
+	"tasks": [
+		{
+			"id": 1,
+			"name": "run_this_first",
+			"steps": 4,
+			"dependsOn": []
+		},
+		{
+			"id": 2,
+			"name": "branching",
+			"steps": 3,
+			"dependsOn": [1]
+		},
+		{
+			"id": 3,
+			"name": "branch_a",
+			"steps": 4,
+			"dependsOn": [2]
+		},
+		{
+			"id": 4,
+			"name": "branch_b",
+			"steps": 3,
+			"dependsOn": [2]
+		},
+		{
+			"id": 5,
+			"name": "branch_c",
+			"steps": 7,
+			"dependsOn": [2]
+		},
+		{
+			"id": 6,
+			"name": "branch_d",
+			"steps": 3,
+			"dependsOn": [2]
+		},
+		{
+			"id": 7,
+			"name": "follow_branch_a",
+			"steps": 3,
+			"dependsOn": [3]
+		},
+		{
+			"id": 8,
+			"name": "follow_branch_b",
+			"steps": 3,
+			"dependsOn": [4]
+		},
+		{
+			"id": 9,
+			"name": "follow_branch_c",
+			"steps": 2,
+			"dependsOn": [5]
+		},
+		{
+			"id": 10,
+			"name": "follow_branch_d",
+			"steps": 7,
+			"dependsOn": [6]
+		},
+		{
+			"id": 11,
+			"name": "join",
+			"steps": 3,
+			"dependsOn": [7, 8, 9, 10]
+		}
+	]
+}
